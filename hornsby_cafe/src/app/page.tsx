@@ -1,5 +1,5 @@
 // src/app/page.tsx
-import Image from "next/image";
+// import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
@@ -14,7 +14,6 @@ export default function Home() {
             <span className="text-xl font-bold text-green-800">Café Forest</span>
           </div>
           <nav className="hidden md:flex items-center space-x-6">
-            <a href="#" className="text-sm font-medium hover:text-green-700 transition-colors">Home</a>
             <a href="#menu" className="text-sm font-medium hover:text-green-700 transition-colors">Menu</a>
             <a href="#about" className="text-sm font-medium hover:text-green-700 transition-colors">About</a>
             <a href="#contact" className="text-sm font-medium hover:text-green-700 transition-colors">Contact</a>
@@ -35,10 +34,9 @@ export default function Home() {
         <div className="absolute inset-0 z-0 bg-gradient-to-r from-green-900/70 to-green-700/50"></div>
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to Café Forest</h1>
-          <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Escape to a tranquil oasis where premium coffee meets nature-inspired ambiance</p>
+          {/* <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Escape to a tranquil oasis where premium coffee meets nature-inspired ambiance</p> */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-green-700 hover:bg-green-800">View Our Menu</Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-green-800">Book a Table</Button>
           </div>
         </div>
       </section>
@@ -125,51 +123,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center">What Our Customers Say</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Testimonial 1 */}
-            <Card className="p-6">
-              <div className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 bg-green-100 rounded-full mb-4"></div>
-                <p className="italic mb-4">&ldquo;The atmosphere at Café Forest is unmatched. It&apos;s my go-to spot for both work and relaxation. The Forest Blend Latte is absolutely divine!&rdquo;</p>
-                <p className="font-semibold">Sarah M.</p>
-              </div>
-            </Card>
-            
-            {/* Testimonial 2 */}
-            <Card className="p-6">
-              <div className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 bg-green-100 rounded-full mb-4"></div>
-                <p className="italic mb-4">&ldquo;As someone who appreciates quality coffee, I can say with confidence that Café Forest serves some of the best in town. Their commitment to sustainability is also admirable.&rdquo;</p>
-                <p className="font-semibold">Michael K.</p>
-              </div>
-            </Card>
-            
-            {/* Testimonial 3 */}
-            <Card className="p-6">
-              <div className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 bg-green-100 rounded-full mb-4"></div>
-                <p className="italic mb-4">&ldquo;The Woodland Berry Tart paired with their signature coffee is a match made in heaven. The staff is always friendly and the ambiance is perfect.&rdquo;</p>
-                <p className="font-semibold">Emily R.</p>
-              </div>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       {/* Contact/Hours Section */}
       <section id="contact" className="py-16 bg-green-800 text-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
               <h2 className="text-3xl font-bold mb-6">Visit Us</h2>
-              <p className="mb-4">123 Woodland Avenue</p>
-              <p className="mb-4">Cityville, State 12345</p>
-              <p className="mb-6">Phone: (555) 123-4567</p>
+              <p className="mb-4">2A Florence St, Hornsby NSW 2077</p>
+              {/* <p className="mb-6">Phone: (555) 123-4567</p> */}
               <Button className="bg-white text-green-800 hover:bg-gray-100">Get Directions</Button>
             </div>
             
@@ -178,17 +139,17 @@ export default function Home() {
               <div className="space-y-2">
                 <div className="flex justify-between">
                   <span>Monday - Friday</span>
-                  <span>7:00 AM - 7:00 PM</span>
+                  <span>6:30 AM - 3:30 PM</span>
                 </div>
                 <Separator className="bg-green-700" />
                 <div className="flex justify-between">
                   <span>Saturday</span>
-                  <span>8:00 AM - 8:00 PM</span>
+                  <span>7:30 AM - 3:00 PM</span>
                 </div>
                 <Separator className="bg-green-700" />
                 <div className="flex justify-between">
                   <span>Sunday</span>
-                  <span>8:00 AM - 6:00 PM</span>
+                  <span>Closed</span>
                 </div>
               </div>
             </div>
@@ -205,7 +166,7 @@ export default function Home() {
             <input 
               type="email" 
               placeholder="Your email address" 
-              className="px-4 py-2 rounded w-full text-black"
+              className="px-4 py-2 rounded w-full text-white"
             />
             <Button className="bg-green-700 hover:bg-green-600 whitespace-nowrap">Subscribe</Button>
           </div>
@@ -218,7 +179,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <h3 className="text-lg font-semibold mb-4">Café Forest</h3>
-              <p className="text-sm">A tranquil oasis in the heart of the city.</p>
+              {/* <p className="text-sm">A tranquil oasis in the heart of the city.</p> */}
             </div>
             
             <div>
