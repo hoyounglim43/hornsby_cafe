@@ -15,7 +15,8 @@ export default function Home() {
           </div>
           <nav className="hidden md:flex items-center space-x-6">
             <a href="#menu" className="text-sm font-medium hover:text-green-700 transition-colors">Menu</a>
-            <a href="#about" className="text-sm font-medium hover:text-green-700 transition-colors">About</a>
+            <a href="#" className="text-sm font-medium hover:text-green-700 transition-colors">Blog</a>
+            <a href="#" className="text-sm font-medium hover:text-green-700 transition-colors">Catering</a>
             <a href="#contact" className="text-sm font-medium hover:text-green-700 transition-colors">Contact</a>
           </nav>
           <Button variant="outline" className="hidden md:flex">Order Now</Button>
@@ -153,22 +154,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Newsletter */}
-      <section className="py-12 bg-green-900 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl font-bold mb-4">Join Our Community</h2>
-          <p className="mb-6 max-w-xl mx-auto">Subscribe to our newsletter for updates on seasonal offerings, events, and exclusive promotions</p>
-          <div className="flex flex-col sm:flex-row gap-2 justify-center max-w-md mx-auto">
-            <input 
-              type="email" 
-              placeholder="Your email address" 
-              className="px-4 py-2 rounded w-full text-white"
-            />
-            <Button className="bg-green-700 hover:bg-green-600 whitespace-nowrap">Subscribe</Button>
           </div>
         </div>
       </section>

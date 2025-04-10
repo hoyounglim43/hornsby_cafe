@@ -1,0 +1,767 @@
+{
+  "customizationOptions": {
+    "size": {
+      "standard": {
+        "id": "size",
+        "name": "Size",
+        "type": "radio",
+        "options": [
+          { "id": "regular", "name": "Regular", "price": 0 },
+          { "id": "large", "name": "Large", "price": 1.00 }
+        ],
+        "required": true
+      },
+      "espresso": {
+        "id": "size",
+        "name": "Size",
+        "type": "radio",
+        "options": [
+          { "id": "regular", "name": "Regular", "price": 0 }
+        ],
+        "required": true
+      }
+    },
+    "milk": {
+      "standard": {
+        "id": "milk",
+        "name": "Milk Options",
+        "type": "radio",
+        "options": [
+          { "id": "regular", "name": "Regular", "price": 0 },
+          { "id": "soy", "name": "Soy Milk", "price": 0.60 },
+          { "id": "almond", "name": "Almond Milk", "price": 0.60 },
+          { "id": "oat", "name": "Oat Milk", "price": 0.60 },
+          { "id": "lactose-free", "name": "Lactose Free", "price": 0.60 }
+        ]
+      }
+    },
+    "sugar": {
+      "standard": {
+        "id": "sugar",
+        "name": "Sugar",
+        "type": "select",
+        "options": [
+          { "id": "none", "name": "None", "price": 0 },
+          { "id": "light", "name": "Light (1)", "price": 0 },
+          { "id": "regular", "name": "Regular (2)", "price": 0 },
+          { "id": "extra", "name": "Extra (3)", "price": 0 }
+        ]
+      }
+    },
+    "syrup": {
+      "standard": {
+        "id": "syrup",
+        "name": "Add Syrup",
+        "type": "radio",
+        "options": [
+          { "id": "none", "name": "None", "price": 0 },
+          { "id": "vanilla", "name": "Vanilla", "price": 0.60 },
+          { "id": "caramel", "name": "Caramel", "price": 0.60 },
+          { "id": "hazelnut", "name": "Hazelnut", "price": 0.60 }
+        ]
+      }
+    },
+    "extras": {
+      "coffee": {
+        "id": "extras",
+        "name": "Extras",
+        "type": "checkbox",
+        "options": [
+          { "id": "extra-shot", "name": "Extra Shot", "price": 0.60 },
+          { "id": "decaf", "name": "Decaf", "price": 0.60 }
+        ]
+      },
+      "iced": {
+        "id": "extras",
+        "name": "Extras",
+        "type": "checkbox",
+        "options": [
+          { "id": "icecream", "name": "Add Scoop of Ice Cream", "price": 1.00 }
+        ]
+      }
+    }
+  },
+  "menuItems": [
+    {
+      "id": "hot-espresso",
+      "name": "Espresso",
+      "description": "A rich, concentrated espresso shot",
+      "price": 3.50,
+      "category": "beverage",
+      "subcategory": "hot",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "size.espresso",
+        "sugar.standard",
+        "syrup.standard",
+        "extras.coffee"
+      ]
+    },
+    {
+      "id": "hot-piccolo",
+      "name": "Piccolo",
+      "description": "Espresso with a small amount of steamed milk",
+      "price": 4.00,
+      "category": "beverage",
+      "subcategory": "hot",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "size.espresso",
+        "milk.standard",
+        "sugar.standard",
+        "syrup.standard",
+        "extras.coffee"
+      ]
+    },
+    {
+      "id": "hot-macchiato",
+      "name": "Macchiato",
+      "description": "Espresso with a dash of frothy milk",
+      "price": 4.00,
+      "category": "beverage",
+      "subcategory": "hot",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "size.espresso",
+        "milk.standard",
+        "sugar.standard",
+        "syrup.standard",
+        "extras.coffee"
+      ]
+    },
+    {
+      "id": "hot-magic",
+      "name": "Magic",
+      "description": "Double ristretto with steamed milk",
+      "price": 4.30,
+      "category": "beverage",
+      "subcategory": "hot",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "size.standard",
+        "milk.standard",
+        "sugar.standard",
+        "syrup.standard",
+        "extras.coffee"
+      ]
+    },
+    {
+      "id": "hot-long-black",
+      "name": "Long Black",
+      "description": "Espresso with hot water, preserving the crema",
+      "price": 4.30,
+      "category": "beverage",
+      "subcategory": "hot",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "size.standard",
+        "sugar.standard",
+        "syrup.standard",
+        "extras.coffee"
+      ]
+    },
+    {
+      "id": "hot-cappuccino",
+      "name": "Cappuccino",
+      "description": "Equal parts espresso, steamed milk, and milk foam",
+      "price": 4.30,
+      "category": "beverage",
+      "subcategory": "hot",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "size.standard",
+        "milk.standard",
+        "sugar.standard",
+        "syrup.standard",
+        "extras.coffee"
+      ]
+    },
+    {
+      "id": "hot-latte",
+      "name": "Latte",
+      "description": "Espresso with steamed milk and a light layer of foam",
+      "price": 4.30,
+      "category": "beverage",
+      "subcategory": "hot",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "size.standard",
+        "milk.standard",
+        "sugar.standard",
+        "syrup.standard",
+        "extras.coffee"
+      ]
+    },
+    {
+      "id": "hot-flat-white",
+      "name": "Flat White",
+      "description": "Espresso with steamed milk and a thin layer of microfoam",
+      "price": 4.30,
+      "category": "beverage",
+      "subcategory": "hot",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "size.standard",
+        "milk.standard",
+        "sugar.standard",
+        "syrup.standard",
+        "extras.coffee"
+      ]
+    },
+    {
+      "id": "hot-mocha",
+      "name": "Mocha",
+      "description": "Espresso with chocolate and steamed milk",
+      "price": 4.90,
+      "category": "beverage",
+      "subcategory": "hot",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "size.standard",
+        "milk.standard",
+        "sugar.standard",
+        "syrup.standard",
+        "extras.coffee"
+      ]
+    },
+    {
+      "id": "hot-chocolate",
+      "name": "Hot Chocolate",
+      "description": "Rich chocolate with steamed milk",
+      "price": 4.50,
+      "category": "beverage",
+      "subcategory": "hot",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "size.standard",
+        "milk.standard",
+        "sugar.standard"
+      ]
+    },
+    {
+      "id": "hot-green-tea-latte",
+      "name": "Green Tea Latte",
+      "description": "Matcha green tea with steamed milk",
+      "price": 4.90,
+      "category": "beverage",
+      "subcategory": "hot",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "size.standard",
+        "milk.standard",
+        "sugar.standard"
+      ]
+    },
+    {
+      "id": "hot-chai-latte",
+      "name": "Chai Latte",
+      "description": "Spiced chai tea with steamed milk",
+      "price": 4.90,
+      "category": "beverage",
+      "subcategory": "hot",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "size.standard",
+        "milk.standard",
+        "sugar.standard"
+      ]
+    },
+    {
+      "id": "tea-english-breakfast",
+      "name": "English Breakfast Tea",
+      "description": "Traditional black tea blend",
+      "price": 4.80,
+      "category": "beverage",
+      "subcategory": "tea",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "sugar.standard"
+      ]
+    },
+    {
+      "id": "tea-earl-grey",
+      "name": "Earl Grey Tea",
+      "description": "Black tea flavored with bergamot oil",
+      "price": 4.80,
+      "category": "beverage",
+      "subcategory": "tea",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "sugar.standard"
+      ]
+    },
+    {
+      "id": "tea-green",
+      "name": "Green Tea",
+      "description": "Traditional green tea",
+      "price": 4.80,
+      "category": "beverage",
+      "subcategory": "tea",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "sugar.standard"
+      ]
+    },
+    {
+      "id": "tea-peppermint",
+      "name": "Peppermint Tea",
+      "description": "Refreshing herbal tea",
+      "price": 4.80,
+      "category": "beverage",
+      "subcategory": "tea",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "sugar.standard"
+      ]
+    },
+    {
+      "id": "cold-iced-long-black",
+      "name": "Iced Long Black",
+      "description": "Double espresso poured over ice and cold water",
+      "price": 5.90,
+      "category": "beverage",
+      "subcategory": "cold",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "sugar.standard",
+        "syrup.standard",
+        "extras.coffee"
+      ]
+    },
+    {
+      "id": "cold-iced-latte",
+      "name": "Iced Latte",
+      "description": "Espresso with cold milk poured over ice",
+      "price": 6.50,
+      "category": "beverage",
+      "subcategory": "cold",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "milk.standard",
+        "sugar.standard",
+        "syrup.standard",
+        "extras.coffee"
+      ]
+    },
+    {
+      "id": "cold-iced-coffee",
+      "name": "Iced Coffee",
+      "description": "Coffee over ice with a scoop of ice cream",
+      "price": 7.00,
+      "category": "beverage",
+      "subcategory": "cold",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "milk.standard",
+        "sugar.standard",
+        "syrup.standard",
+        "extras.coffee"
+      ]
+    },
+    {
+      "id": "cold-iced-mocha",
+      "name": "Iced Mocha",
+      "description": "Espresso with chocolate and cold milk poured over ice",
+      "price": 6.90,
+      "category": "beverage",
+      "subcategory": "cold",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "milk.standard",
+        "sugar.standard",
+        "syrup.standard",
+        "extras.coffee",
+        "extras.iced"
+      ]
+    },
+    {
+      "id": "cold-iced-chocolate",
+      "name": "Iced Chocolate",
+      "description": "Chocolate with cold milk over ice",
+      "price": 6.50,
+      "category": "beverage",
+      "subcategory": "cold",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "milk.standard",
+        "sugar.standard",
+        "extras.iced"
+      ]
+    },
+    {
+      "id": "cold-iced-green-tea-latte",
+      "name": "Iced Green Tea Latte",
+      "description": "Matcha green tea with cold milk over ice",
+      "price": 6.50,
+      "category": "beverage",
+      "subcategory": "cold",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "milk.standard",
+        "sugar.standard",
+        "extras.iced"
+      ]
+    },
+    {
+      "id": "cold-iced-chai-latte",
+      "name": "Iced Chai Latte",
+      "description": "Spiced chai tea with cold milk over ice",
+      "price":
+      6.50,
+      "category": "beverage",
+      "subcategory": "cold",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "milk.standard",
+        "sugar.standard",
+        "extras.iced"
+      ]
+    },
+    {
+      "id": "frappe-coffee",
+      "name": "Coffee Frappe",
+      "description": "Blended coffee with ice and ice cream",
+      "price": 7.80,
+      "category": "beverage",
+      "subcategory": "frappe",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "milk.standard",
+        "sugar.standard",
+        "syrup.standard"
+      ]
+    },
+    {
+      "id": "frappe-mocha",
+      "name": "Mocha Frappe",
+      "description": "Blended coffee, chocolate, ice and ice cream",
+      "price": 7.80,
+      "category": "beverage",
+      "subcategory": "frappe",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "milk.standard",
+        "sugar.standard",
+        "syrup.standard"
+      ]
+    },
+    {
+      "id": "frappe-chocolate",
+      "name": "Chocolate Frappe",
+      "description": "Blended chocolate with ice and ice cream",
+      "price": 7.80,
+      "category": "beverage",
+      "subcategory": "frappe",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "milk.standard",
+        "sugar.standard",
+        "syrup.standard"
+      ]
+    },
+    {
+      "id": "frappe-green-tea",
+      "name": "Green Tea Frappe",
+      "description": "Blended matcha green tea with ice and ice cream",
+      "price": 7.80,
+      "category": "beverage",
+      "subcategory": "frappe",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "milk.standard",
+        "sugar.standard",
+        "syrup.standard"
+      ]
+    },
+    {
+      "id": "frappe-chai",
+      "name": "Chai Frappe",
+      "description": "Blended chai with ice and ice cream",
+      "price": 7.80,
+      "category": "beverage",
+      "subcategory": "frappe",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "milk.standard",
+        "sugar.standard",
+        "syrup.standard"
+      ]
+    },
+    {
+      "id": "smoothie-strawberry",
+      "name": "Strawberry Smoothie",
+      "description": "Fresh strawberries blended with yogurt",
+      "price": 7.00,
+      "category": "beverage",
+      "subcategory": "smoothie",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "milk.standard"
+      ]
+    },
+    {
+      "id": "smoothie-blueberry",
+      "name": "Blueberry Smoothie",
+      "description": "Fresh blueberries blended with yogurt",
+      "price": 7.00,
+      "category": "beverage",
+      "subcategory": "smoothie",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "milk.standard"
+      ]
+    },
+    {
+      "id": "smoothie-mango",
+      "name": "Mango Smoothie",
+      "description": "Fresh mango blended with yogurt",
+      "price": 7.00,
+      "category": "beverage",
+      "subcategory": "smoothie",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "milk.standard"
+      ]
+    },
+    {
+      "id": "smoothie-stranana",
+      "name": "Stranana Smoothie",
+      "description": "Strawberry and banana blended with yogurt",
+      "price": 7.50,
+      "category": "beverage",
+      "subcategory": "smoothie",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "milk.standard"
+      ]
+    },
+    {
+      "id": "smoothie-acai",
+      "name": "Acai Smoothie",
+      "description": "Acai puree, banana, mixed berries on almond milk",
+      "price": 8.50,
+      "category": "beverage",
+      "subcategory": "smoothie",
+      "image": "/api/placeholder/200/200"
+    },
+    {
+      "id": "juice-custom",
+      "name": "Fresh Juice",
+      "description": "Build your own juice - Apple, Carrot, Orange, Ginger, or Celery",
+      "price": 7.50,
+      "category": "beverage",
+      "subcategory": "juice",
+      "image": "/api/placeholder/200/200",
+      "customizationOptionsRefs": [
+        "extras.iced"
+      ]
+    },
+    {
+      "id": "food-banana-bread",
+      "name": "Banana Bread",
+      "description": "Freshly baked banana bread",
+      "price": 5.50,
+      "category": "food",
+      "subcategory": "light-bite",
+      "image": "/api/placeholder/200/200"
+    },
+    {
+      "id": "food-bagel-plain",
+      "name": "Bagel with Cream Cheese",
+      "description": "Plain bagel with cream cheese",
+      "price": 6.00,
+      "category": "food",
+      "subcategory": "light-bite",
+      "image": "/api/placeholder/200/200"
+    },
+    {
+      "id": "food-bagel-blueberry",
+      "name": "Blueberry Bagel with Cream Cheese",
+      "description": "Blueberry bagel with cream cheese",
+      "price": 6.50,
+      "category": "food",
+      "subcategory": "light-bite",
+      "image": "/api/placeholder/200/200"
+    },
+    {
+      "id": "food-plain-croissant",
+      "name": "Plain Croissant",
+      "description": "Buttery, flaky plain croissant",
+      "price": 5.50,
+      "category": "food",
+      "subcategory": "dessert",
+      "image": "/api/placeholder/200/200"
+    },
+    {
+      "id": "food-almond-croissant",
+      "name": "Almond Croissant",
+      "description": "Buttery croissant with almond filling and sliced almonds",
+      "price": 6.50,
+      "category": "food",
+      "subcategory": "dessert",
+      "image": "/api/placeholder/200/200"
+    },
+    {
+      "id": "food-ham-cheese-croissant",
+      "name": "Ham Cheese Croissant",
+      "description": "Croissant filled with ham and cheese",
+      "price": 7.50,
+      "category": "food",
+      "subcategory": "sandwich",
+      "image": "/api/placeholder/200/200"
+    },
+    {
+      "id": "food-raspberry-pistachio-friand",
+      "name": "Raspberry & Pistachio Friand",
+      "description": "Almond cake with raspberries and pistachios",
+      "price": 5.50,
+      "category": "food",
+      "subcategory": "dessert",
+      "image": "/api/placeholder/200/200"
+    },
+    {
+      "id": "food-toast-white",
+      "name": "White Toast",
+      "description": "Two slices of white toast served with butter, jam or Vegemite",
+      "price": 5.00,
+      "category": "food",
+      "subcategory": "light-bite",
+      "image": "/api/placeholder/200/200"
+    },
+    {
+      "id": "food-toast-raisin",
+      "name": "Raisin Toast",
+      "description": "Two slices of raisin toast served with butter",
+      "price": 5.50,
+      "category": "food",
+      "subcategory": "light-bite",
+      "image": "/api/placeholder/200/200"
+    },
+    {
+      "id": "food-ham-cheese-tomato-toastie",
+      "name": "Ham Cheese Tomato Toastie",
+      "description": "Toasted sandwich with ham, cheese and tomato on white bread",
+      "price": 7.00,
+      "category": "food",
+      "subcategory": "sandwich",
+      "image": "/api/placeholder/200/200"
+    },
+    {
+      "id": "food-blt",
+      "name": "BLT",
+      "description": "Bacon, lettuce, tomato with aioli sauce on turkish bread",
+      "price": 9.50,
+      "category": "food",
+      "subcategory": "sandwich",
+      "image": "/api/placeholder/200/200"
+    },
+    {
+      "id": "food-blat",
+      "name": "BLAT",
+      "description": "Bacon, lettuce, avocado, tomato with aioli sauce on turkish bread",
+      "price": 11.50,
+      "category": "food",
+      "subcategory": "sandwich",
+      "image": "/api/placeholder/200/200"
+    },
+    {
+      "id": "food-egg-sandwich",
+      "name": "Egg Sandwich",
+      "description": "Egg, cheese, mayo on white bread",
+      "price": 8.00,
+      "category": "food",
+      "subcategory": "sandwich",
+      "image": "/api/placeholder/200/200"
+    },
+    {
+      "id": "food-salad-sandwich",
+      "name": "Salad Sandwich",
+      "description": "Lettuce, cucumber, tomato, cheese, coleslaw on white bread",
+      "price": 8.50,
+      "category": "food",
+      "subcategory": "sandwich",
+      "image": "/api/placeholder/200/200"
+    },
+    {
+      "id": "food-tuna-sandwich",
+      "name": "Tuna Sandwich",
+      "description": "Tuna, pickles, corn, onion, cucumber, mayo on white bread",
+      "price": 9.00,
+      "category": "food",
+      "subcategory": "sandwich",
+      "image": "/api/placeholder/200/200"
+    },
+    {
+      "id": "food-chicken-sandwich",
+      "name": "Chicken Sandwich",
+      "description": "Chicken, pesto, cheese, lettuce, tomato on white bread",
+      "price": 9.00,
+      "category": "food",
+      "subcategory": "sandwich",
+      "image": "/api/placeholder/200/200"
+    },
+    {
+      "id": "food-bacon-egg-roll",
+      "name": "Bacon & Egg Roll",
+      "description": "Bacon & egg with BBQ or tomato sauce on brioche bun",
+      "price": 8.90,
+      "category": "food",
+      "subcategory": "all-day",
+      "image": "/api/placeholder/200/200"
+    },
+    {
+      "id": "food-bacon-egg-roll-combo",
+      "name": "Bacon & Egg Roll with Coffee",
+      "description": "Bacon & egg roll with a small coffee",
+      "price": 11.90,
+      "category": "food",
+      "subcategory": "all-day",
+      "image": "/api/placeholder/200/200"
+    },
+    {
+      "id": "food-avo-scrambled-eggs",
+      "name": "Avo & Scrambled Eggs",
+      "description": "Smashed avocado and scrambled eggs on sourdough",
+      "price": 12.00,
+      "category": "food",
+      "subcategory": "all-day",
+      "image": "/api/placeholder/200/200"
+    },
+    {
+      "id": "food-avo-scrambled-eggs-combo",
+      "name": "Avo & Scrambled Eggs with Coffee",
+      "description": "Smashed avocado and scrambled eggs with a small coffee",
+      "price": 15.50,
+      "category": "food",
+      "subcategory": "all-day",
+      "image": "/api/placeholder/200/200"
+    },
+    {
+      "id": "food-kimchi-fried-rice",
+      "name": "Kimchi Fried Rice",
+      "description": "Kimchi, onion, bacon, rice, fried egg, seaweed",
+      "price": 14.00,
+      "category": "food",
+      "subcategory": "all-day",
+      "image": "/api/placeholder/200/200"
+    },
+    {
+      "id": "food-bulgogi-rice",
+      "name": "Bulgogi Rice",
+      "description": "Marinated sliced beef (Bulgogi), spring onion, capsicum, mushroom with steamed rice",
+      "price": 16.00,
+      "category": "food",
+      "subcategory": "all-day",
+      "image": "/api/placeholder/200/200"
+    },
+    {
+      "id": "food-kimchi-cream-pasta",
+      "name": "Kimchi Cream Pasta",
+      "description": "Kimchi, onion, bacon and mushroom in a creamy sauce",
+      "price": 19.00,
+      "category": "food",
+      "subcategory": "all-day",
+      "image": "/api/placeholder/200/200"
+    }
+  ]
+}
